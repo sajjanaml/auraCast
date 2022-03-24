@@ -1,5 +1,9 @@
 ({
-    helperMethod : function() {
+    clickHelper : function() {
+        this.Help();
+    },
+    Help : function() {
+        console.log('Helloooo')
 
     }
 })

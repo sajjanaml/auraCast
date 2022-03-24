@@ -3,4 +3,6 @@
     <p>I  am from parent {!v.message} </p>
     <c:exploreComponentOne message="{!v.message}"/>
 
+    <lightning:button  variant="Brand" label="Click me" onclick="{!c.handleClick}"/>
+
 </aura:component>	
