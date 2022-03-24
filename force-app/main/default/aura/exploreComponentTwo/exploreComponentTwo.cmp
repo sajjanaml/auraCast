@@ -3,4 +3,5 @@
     
     <c:exploreComponentThree message="{!v.message}"/>
     <p>I  am from exploreComponentTwo {!v.message} </p>
+    <!-- test  -->
 </aura:component>	
