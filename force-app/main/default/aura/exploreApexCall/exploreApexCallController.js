@@ -3,6 +3,7 @@
         
         // 1. Mention the name of the Apex Method  
         var action = component.get('c.foobar');
+        var message ="Hey Laxman!!";
 
         // 2. Set the Params
         action.setParams({
@@ -13,6 +14,7 @@
 
         action.setCallback(this,function(response){
             var state=response.getState();
+            console.log(message);
                 console.log('I am in Apex Call Controller JS');
 
                 if(state === 'SUCCESS' ){
