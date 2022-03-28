@@ -1,0 +1,26 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:attribute name="newContact" type="Object"/>
+    <aura:attribute name="errors" type="String"/>
+
+    <force:recordData aura:id="contactRecord"
+     layoutType="FULL"
+     targetFields="{!v.newContact}" 
+     targetError="{!v.errors}"/>
+    
+    <div>
+        <lightning:input label="FirstName" value="{!v.newContact.FirstName}"/>
+        <lightning:input label="LastName" value="{!v.newContact.LastName}"/>
+        <lightning:input label="Title" value="{!v.newContact.Title}"/>
+
+        <lightning:button label="Create" onclick="{!c.handleSave}" />   
+    </div>
+
+    <aura:if isTrue="{! not(empty(v.errors))}">
+        {!v.errors}
+    </aura:if>
+
+    
+</aura:component>	
