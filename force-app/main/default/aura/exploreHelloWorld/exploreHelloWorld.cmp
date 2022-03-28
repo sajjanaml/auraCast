@@ -1,8 +1,0 @@
-<aura:component>
-    <aura:attribute name="message" type="String" default="Sri Ram"/>
-    <p>I  am from parent {!v.message} </p>
-    <c:exploreComponentOne message="{!v.message}"/>
-
-    <lightning:button  variant="Brand" label="Click me" onclick="{!c.handleClick}"/>
-
-</aura:component>	

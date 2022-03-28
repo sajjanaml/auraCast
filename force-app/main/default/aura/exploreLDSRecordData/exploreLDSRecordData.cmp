@@ -1,0 +1,26 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="accountRecord" type="Account"/>
+    <aura:attribute name="errors" type="String"/>
+    
+    
+    <!-- <force:recordData aura:id="record" recordId="{!v.recordId}" mode="EDIT" layoutType="FULL" targetFields="{!v.accountRecord}" targetError="{!v.errors}"/> -->
+    <force:recordData aura:id="record" recordId="{!v.recordId}" mode="EDIT" 
+    fields="Id, Name, Rating, Industry" 
+    targetFields="{!v.accountRecord}" 
+    targetError="{!v.errors}"/>
+
+    
+        <div>
+            <lightning:input  value="{!v.accountRecord.Id}" />
+            <lightning:input value="{!v.accountRecord.Industry}" />
+            <lightning:input  value="{!v.accountRecord.Name}" />
+            <lightning:input  value="{!v.accountRecord.Rating}" />
+
+            <lightning:button label="Update" onclick="{!c.handleUpdate}" />
+        </div>    
+    
+    <aura:if isTrue="{! not(empty(v.errors))}">
+            {!v.errors}
+    </aura:if>
+</aura:component>	
