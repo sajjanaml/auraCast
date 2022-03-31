@@ -1,0 +1,3 @@
+<aura:component>
+    <p>Hey this is my First Component trying direct reload</p>
+</aura:component>	
