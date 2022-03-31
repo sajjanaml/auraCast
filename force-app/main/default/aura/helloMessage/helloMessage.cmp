@@ -1,0 +1,4 @@
+<aura:component>
+    <p>Laxman Sajjanam</p>
+    <!-- <p>Hi this is Laxman it will be called from Cmpss</p> -->
+</aura:component>	

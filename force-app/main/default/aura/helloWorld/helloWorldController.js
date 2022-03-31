@@ -1,5 +1,6 @@
 ({
-    myAction : function(component, event, helper) {
+    handleTest : function(component, event, helper) {
+        // console.log("Hello World");
 
     }
 })
