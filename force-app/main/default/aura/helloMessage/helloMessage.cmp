@@ -1,4 +1,6 @@
 <aura:component>
-    <p>Laxman Sajjanam</p>
+    <aura:attribute name="message" type="String"  />
     <!-- <p>Hi this is Laxman it will be called from Cmpss</p> -->
+    <!-- {!v.message + ' Thanks.' }  -->
+    <!-- {!v.message} -->
 </aura:component>	

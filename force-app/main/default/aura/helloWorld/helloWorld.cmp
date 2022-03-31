@@ -1,4 +1,18 @@
-<aura:component>
-    <p>Hello</p>
-    <!-- <lightning:button label="Test"  onclick="handleTest"/> -->
-</aura:component>	
+<aura:component controller="helloWorldController">
+    
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/> 
+    
+    
+    <aura:attribute name="message" type="List" default="['This is Krishna',
+                                                        'Teja. And I Train people',
+                                                        'on Lightning']"/>
+	<p> Hello</p>
+    
+    
+    {!v.message[0]}
+    {!v.message[1]}
+	{!v.message[2]}
+    
+    
+	  
+</aura:component>
