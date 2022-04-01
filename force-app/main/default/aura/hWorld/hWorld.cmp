@@ -1,0 +1,9 @@
+<aura:component>
+    <!-- <aura:attribute name="message" type="String"/> -->
+    <!-- <lightning:button label="Click me" onclick="{!c.Clickme}"/> -->
+    <p>Hello</p>
+  
+    
+    <c:hMessage message="Assigning value to hWorld Component attribute from hWorld Component"/>
+    
+</aura:component>	

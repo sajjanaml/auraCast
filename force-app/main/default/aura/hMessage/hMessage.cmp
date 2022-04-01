@@ -1,0 +1,7 @@
+<aura:component>
+    <!-- <p>Hello I am from Hmessage Component</p> -->
+    <!-- var c = component.set('v.message','Assigning a value to hWorld component attribute from hMessage Componentt'); -->
+    <!-- <c:hMessage message="Assigning value to hWorld Component attribute from hWorld Component"/> -->
+    <aura:attribute name="message" type="String"/>
+    {!v.message}
+</aura:component>	
