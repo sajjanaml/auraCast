@@ -1,9 +1,14 @@
-<aura:component>
+<aura:component controller="helloWorldController">
     <!-- <aura:attribute name="message" type="String"/> -->
     <!-- <lightning:button label="Click me" onclick="{!c.Clickme}"/> -->
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}"/>
+    <aura:attribute name="message" type="Lead"/>
     <p>Hello</p>
+
+        {!v.message.Name}
+
   
     
-    <c:hMessage message="Assigning value to hWorld Component attribute from hWorld Component"/>
-    
+    <!-- <c:hMessage message='100'/> -->
+      
 </aura:component>	
