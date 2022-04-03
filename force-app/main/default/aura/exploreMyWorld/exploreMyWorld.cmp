@@ -1,0 +1,9 @@
+<aura:component>
+    <aura:attribute name="message" type="String" default="Hi Aura Components!!!"/>
+    <p>I am from Explore My World Component</p>
+    <br/>
+    <p>{!v.message}</p>
+    
+    <c:exploreMyComponentOne message="{!v.message}"/>
+
+</aura:component>	

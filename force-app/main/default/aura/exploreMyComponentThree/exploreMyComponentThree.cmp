@@ -1,0 +1,7 @@
+<aura:component>
+    <aura:attribute name="message" type="string" />
+    <p>I am from Explore My World Component Three</p>
+    <br/>
+    <p>{!v.message}</p>
+
+</aura:component>	
