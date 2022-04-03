@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:attribute name="message" type="String" />
+
+    <lightning:button label="Yes" onclick="{!c.cYes}" />
+    <lightning:button label="No" onclick="{!c.cNo}" />
+
+    {!v.message}
+</aura:component>	
