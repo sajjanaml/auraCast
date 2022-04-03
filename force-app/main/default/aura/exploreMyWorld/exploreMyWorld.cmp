@@ -6,4 +6,6 @@
     
     <c:exploreMyComponentOne message="{!v.message}"/>
 
+    <lightning:button label="Click me" onclick="{!c.handleClick}"/>
+
 </aura:component>	
