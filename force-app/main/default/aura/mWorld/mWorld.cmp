@@ -1,0 +1,15 @@
+<aura:component controller="LeadCall">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="message" type="Lead" />
+
+   <p> Hello {!v.message.Name} </p>
+   <p> Hello {!v.message.Id} </p>
+
+   <aura:attribute name="list" type="List" default="['Hi',
+   'Laxman','Sajjanam']"/>
+
+   {!v.list[0]}
+   {!v.list[1]}
+   {!v.list[2]}
+
+</aura:component>	
