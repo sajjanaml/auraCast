@@ -9,7 +9,7 @@
             var state = response.getState();
             if (state === "SUCCESS") {
                 console.log(response.getReturnValue());
-                //component.set("v.message", response.getReturnValue());
+                component.set("v.message", response.getReturnValue());
             }
             else {
                 console.log("Failed with state: " + state);
