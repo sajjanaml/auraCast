@@ -1,0 +1,6 @@
+<aura:component>
+<!-- 1.Create an Event-->
+<!-- 2.Register an Event Broadcaster/Source Component--> 
+<!-- 3.Fire an Event -->
+<!-- 4.Register an Event  Receiver Component-->
+</aura:component>	
