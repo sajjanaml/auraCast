@@ -1,0 +1,10 @@
+<aura:component>
+
+    <aura:registerEvent name="appEvent" type="c:exploreApplicationEvent" />
+
+    <aura:attribute name="greeting" type="String"/>
+
+    <lightning:input label="Greeting"  value="{!v.greeting}" />
+    <lightning:button label="SendData" onclick="{!c.handleSendData}"/>
+
+</aura:component>	
