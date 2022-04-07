@@ -1,0 +1,7 @@
+<aura:component>
+    <aura:attribute name="greeting" type="String"/>
+    <aura:handler event="c:myApplicationEvent" action="{!c.handleApplicationEvent}"/>
+
+    {!v.greeting}
+
+</aura:component>	
