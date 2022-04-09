@@ -1,0 +1,11 @@
+<aura:component>
+
+    <aura:handler name="cmpEvent" event="c:exploreComponentEvent" action="{!c.handleComponentEvent}"/>
+    <aura:attribute name="greeting" type="String"/>
+
+    {!v.greeting}
+
+    
+    <c:exploreChildComponent/>
+
+</aura:component>	

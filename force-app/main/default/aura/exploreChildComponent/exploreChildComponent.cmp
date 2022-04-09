@@ -1,0 +1,7 @@
+<aura:component>
+    <aura:registerEvent name="cmpEvent" type="c:exploreComponentEvent"  />
+    <aura:attribute name="greeting" type="String"/> 
+    <lightning:input label="greeting"   value="{!v.greeting}"/>
+    <lightning:button label="Send Data" onclick="{!c.handleData}"/>
+
+</aura:component>	
