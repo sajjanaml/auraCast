@@ -1,0 +1,13 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId" access="global">
+
+    <aura:attribute name="baseDomain"   type="String"   default="playful-panda-9k9sr0-dev-ed--c.visualforce.com"/>
+
+    <iframe aura:id="vframe" src="{! 'https://' + v.baseDomain + '/apex/exploreReceiverPage'}" frameborder="0"/>
+
+    <aura:attribute name="message"  type="String"   />
+
+    <lightning:input label="message"    value="{!v.message}"/>
+
+    <lightning:button label="SendData"  onclick="{!c.handleSendData}"/>
+
+</aura:component>	

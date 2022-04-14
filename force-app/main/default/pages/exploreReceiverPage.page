@@ -1,0 +1,31 @@
+<apex:page>
+
+    <div id="msg">
+        This is thes Visualforce Page
+    </div>
+
+    <script>
+        var lexOrigin = 'https://playful-panda-9k9sr0-dev-ed.lightning.force.com';
+        window.addEventListener(
+            "message",
+            function(event){
+
+                if(event.origin !== lexOrigin){
+                    return;
+                }
+
+                document.getElementById("msg").innerHTML = event.data;
+                console.log(event.data);
+
+            },
+            false
+
+
+
+
+        );
+    
+    
+    </script>
+
+</apex:page>
